@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>Erfan Aasi</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -53,8 +53,8 @@ body {font-family: "Lato", sans-serif}
       <div style="position:relative; left:610px; top:-395px;">
         <img src="photos/my_profile.jpg" alt="Erfan Aasi" style="width: 250px; height: 372px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
       </div>
-      <p style="font-family:'Adobe Caslon'; font-size: 23px; max-width:800px; position:relative; left:-50px; top:-340px" class="w3-justify"> <b>Research Interests</b>: Safe Autonomy in Robotics, Interpretable Decision-Making, Deep Learning and Language Models 
-      <img src="icons/attachment.png" alt="Attachment" style="position:relative; left: -365px; top:111px; width: 33px; height: 33px">
+      <p style="font-family:'Adobe Caslon'; font-size: 22px; max-width:800px; position:relative; left:-50px; top:-340px" class="w3-justify"> <b>Research Interests</b>: Safe Autonomy, Interpretable Decision-Making, Deep Learning and Language Models 
+      <img src="icons/attachment.png" alt="Attachment" style="position:relative; left: -212px; top:111px; width: 33px; height: 33px">
       <p style="font-family:'Adobe Caslon'; font-size: 25px; max-width:600px; position:relative; left: -29px; top:-290px" class="w3-justify"> 
         <a href="my_resume.pdf" target="_blank">
           Resume</a> 
@@ -96,24 +96,47 @@ body {font-family: "Lato", sans-serif}
 
 <!--=========================================================================-->
   <!-- The PROJECTS Section -->
-  <div style="height:1800px" class="w3-white" id="projects">
+  <div style="height:1750px" class="w3-white" id="projects">
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
       <h2 style="font-family:'Adobe Caslon'">PROJECTS</h2>
-      <p class="w3-center">
-        Brief explanation?
-      </p>
     </div>
     <div class="w3-container w3-content w3-center" style="max-width:1600px; position:relative; top:-70px">  <!-- wider container for photos -->
       <div class="w3-row w3-padding-32" style="display: flex; column-gap: 50px;">         
           <div class="w3-half">           
               <p><b style="font-size: 20px;">Generating Out-Of-Distribution Scenarios Using Large Language Models</b></p>
-              <p>In this project, ...</p>           
-              <img src="photos/bu_lab.jpg" class="w3-round w3-margin-bottom" alt="Photo 1" style="width:95%">         
+              <p>
+                This project explores the use of Large Language Models (LLMs) to tackle the critical challenge of 
+                addressing Out-Of-Distribution (OOD) scenarios in autonomous driving, which are essential for 
+                ensuring safety and reliability under unpredictable conditions. Leveraging the zero-shot generalization 
+                and reasoning capabilities of LLMs, we introduce a framework that generates diverse OOD scenarios as a 
+                branching tree, with each branch representing a unique case. These scenarios are simulated in the 
+                CARLA simulator through automated scene augmentation aligned with textual descriptions. We evaluate 
+                the framework using a diversity metric and a novel "OOD-ness" metric to quantify deviation from 
+                typical urban conditions. Additionally, we assess the ability of Vision-Language Models (VLMs) to 
+                interpret and navigate these scenarios. This work highlights the transformative potential of language 
+                models in enhancing the safety validation of autonomous vehicles.</p>           
+              <video class="w3-round w3-margin-bottom" style="width:95%;" autoplay loop muted>
+                <source src="videos/ood_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>         
           </div>         
           <div class="w3-half">           
               <p><b style="font-size: 20px;">Autonomous Driving in Urban Environments Under Uncertain Conditions</b></p>  
-              <p>In this project, ...</p>          
-              <img src="photos/mit_lab.jpg" class="w3-round w3-margin-bottom" alt="Photo 2" style="width:95%">         
+              <p>
+                This project introduces a two-level hierarchical architecture for controlling autonomous vehicles in 
+                complex urban environments, prioritizing collision avoidance, traffic rule adherence, and real-time 
+                performance. By integrating Signal Temporal Logic (STL) into Model Predictive Control (MPC) at the top 
+                level and leveraging detailed feedback from the bottom level, the system bridges the gap between 
+                simplified control models and real-world dynamics. This closed-loop approach enhances safety and 
+                reliability, addressing a critical challenge in autonomous driving. Simulations in the CARLA simulator 
+                demonstrate the method's effectiveness and efficiency compared to existing solutions, highlighting its 
+                potential to advance urban autonomous vehicle navigation. By tackling the discrepancies between 
+                simplified models and real-world conditions, this framework provides a robust foundation for safer and 
+                more dependable autonomous systems.</p>          
+              <video class="w3-round w3-margin-bottom" style="width:95%;" autoplay loop muted>
+                <source src="videos/mpc_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>         
           </div>       
       </div>
     </div>
@@ -121,13 +144,31 @@ body {font-family: "Lato", sans-serif}
       <div class="w3-row w3-padding-32" style="display: flex; column-gap: 50px;">         
           <div class="w3-half">           
               <p><b style="font-size: 20px;">Interpretable Classification of Time-Series Data Using Decision Trees</b></p>    
-              <p>In this project, ...</p>        
-              <img src="photos/bu_lab.jpg" class="w3-round w3-margin-bottom" alt="Photo 1" style="width:95%">         
+              <p>Classifying time-series data is critical for the analysis and control of autonomous systems, including 
+                robots and self-driving cars, where interpretability is essential for safety and trust. Existing 
+                temporal logic-based learning methods often fall short in real-world applications due to inaccuracies 
+                or the complexity of the generated formulae. To address these challenges, we present Boosted Concise 
+                Decision Trees (BCDTs), a novel approach that combines an ensemble of simplified decision trees to 
+                produce Signal Temporal Logic (STL) classifiers. This method enhances classification accuracy while 
+                prioritizing interpretability by generating concise and comprehensible formulae. The effectiveness of 
+                BCDTs is demonstrated through naval surveillance and urban-driving case studies, highlighting its 
+                practical significance and potential for real-world impact.</p>        
+              <img src="photos/stl_classification.png" class="w3-round w3-margin-bottom" alt="Photo 1" style="width:95%">         
           </div>         
           <div class="w3-half">           
               <p><b style="font-size: 16px;">Deep Reinforcement Learning in Complex Evnironments with Interpretable Specifications</b></p>       
-              <p>In this project, ...</p>     
-              <img src="photos/mit_lab.jpg" class="w3-round w3-margin-bottom" alt="Photo 2" style="width:95%">         
+              <p>This project addresses the challenges of robot navigation in cluttered environments with unknown 
+                dynamics by leveraging deep reinforcement learning (DRL) to handle tasks specified through Linear 
+                Temporal Logic (LTL) formulas. Traditional DRL approaches struggle with exploration due to sparse 
+                rewards, a common issue in obstacle-dense settings. To tackle this, we propose a novel framework that 
+                integrates path planning-guided reward schemes with sampling-based methods to enhance exploration and 
+                ensure efficient task completion. By decomposing complex LTL missions into distributed sub-goals, our 
+                approach significantly improves the performance and adaptability of robots in achieving intricate 
+                missions, demonstrating the transformative potential of reinforcement learning in robotics.</p>     
+                <video class="w3-round w3-margin-bottom" style="width:100%;" autoplay loop muted>
+                  <source src="videos/rl_demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>         
           </div>       
       </div>
     </div>
